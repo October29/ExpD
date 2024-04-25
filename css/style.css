@@ -1,0 +1,367 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.navMenu {
+    display: flex;
+    justify-content: space-around;
+    height: 2rem;
+    padding: 3vh 0 0 0;
+    background-color: var(--grayMainColor);
+    box-shadow: #848489 0 3px 1px;
+}
+
+.logo {
+    width: 2rem;
+    margin-top: -0.8rem;
+}
+
+.navItem {
+    width: 190px;
+    height: 2rem;
+    margin: -2rem 0;
+    list-style: none;
+    background-color: var(--whiteColor);
+    border: solid 2px  #111e8e;
+    box-shadow: var(--blueShadowColor) 5px 5px 1px;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+.navItem:hover {
+    transform: scale(1.03);
+    height: 100px;
+    border: solid 2px  var(--darkBlueMainColor);
+    box-shadow: var(--blueShadowColor) 8px 8px 1px;
+}
+.navItem:active {
+    transform: scale(0.9);
+}
+.navItem:active .itemLink {
+    background-color: var(--yellowMainColor);
+}
+
+
+.navItem:hover .subItem_container {
+    display: block;
+}
+
+.navMenu_ItemContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.itemLink {
+    display: block;
+    max-width: 180px;
+    height: 30px;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    font-family: var(--PerfectDOS);
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: var(--darkBlueMainColor) 2px solid;
+    color: rgb(255, 255, 255);
+    background-color: var(--blueMainColor);
+}
+
+
+.subItem_container {
+    display: none;
+    background-color: var(--whiteColor);
+    padding: 0;
+}
+.subItem {
+    list-style: none;
+}
+.subItem a {
+    display: block;
+    width: 100%;
+    padding: 0.3rem 0.2rem;
+    text-align: center;
+    font-family: var(--PerfectDOS);
+    font-size: 0.85rem;
+    letter-spacing: var(--kerning);
+    text-decoration: none;
+    color: var(--blueMainColor);
+}
+.subItem a:hover {
+    background-color: var(--blueMainColor);
+    color: var(--whiteColor);
+}
+
+.select {
+    background-color: var(--greenMainColor);
+    color: var(--whiteColor);
+}
+
+/*Concept area*/
+
+.conceptText {
+    width: 25rem;
+    margin: 5rem;
+    border: var(--darkBlueMainColor) 3px solid;
+    box-shadow: var(--blueShadowColor) 5px 5px 1px;
+    user-select: none;
+}
+
+.mainTittle {
+    padding: 0.6rem;
+    margin: 0;
+    font-family: var(--PerfectDOS);
+    color: var(--whiteColor);
+    background-color: var(--blueMainColor);
+    border-bottom: var(--darkBlueMainColor) 3px solid;
+}
+
+.descriptionText {
+    font-family: var(--PerfectDOS);
+    padding: 0 0.6rem;
+}
+
+.label {
+    padding: 0.2rem 0.5rem;
+    margin: 0;
+    font-family: var(--PerfectDOS);
+    color: var(--whiteColor);
+    background-color: var(--blueMainColor);
+    border-bottom: var(--darkBlueMainColor) 3px solid;
+}
+
+.picBorder {
+    user-select: none;
+    overflow: hidden;
+    background-color: var(--blueMainColor);
+    border: var(--darkBlueMainColor) 3px solid;
+    box-shadow: var(--blueShadowColor) 5px 5px 1px;
+    transition: 0.1s all ease-in-out;
+}
+.picBorder:hover {
+    transform: scale(1.05);
+    box-shadow: var(--blueShadowColor) 8px 8px 1px;
+    z-index: 1;
+}
+.picBorder:active .label{
+    background-color: var(--yellowMainColor);
+}
+
+.pic1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    z-index: 1;
+}
+.pic2 {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    z-index: 0;
+}
+    .pic2 img {
+        width: 25rem;
+    }
+
+.pic3 {
+    position: absolute;
+    top: 55%;
+    left: 8%;
+    z-index: 0;
+}
+    .pic3 img {
+        width: 22rem;
+    }
+
+.pic4 {
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    z-index: 0;
+}
+    .pic4 img {
+        width: 22rem;
+    }
+.pic5 {
+    position: absolute;
+    top: 19%;
+    left: 75%;
+    z-index: 0;
+    width: 13%;
+}
+
+.construction {
+    margin: 40rem 0 0 0;
+    padding: 3rem 5rem 5rem;
+    font-family: var(--PerfectDOS);
+    font-size: 1.7rem;
+    color: var(--whiteColor);
+    background-color: var(--yellowMainColor);
+}
+
+.canvas_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.canva {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 3rem 3rem 3rem;
+    background-color: var(--whiteColor);
+    border: var(--blueShadowColor) 3px solid;
+    box-shadow: var(--darkBlueMainColor) 5px 5px 1px;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+}
+
+.canva_video{
+    width: 26rem;
+    height: 8rem;
+    margin: 0 0 2rem 0 ;
+}
+.video_ExpD {
+    padding: 0;
+    margin: -4rem 0 0 0;
+}
+
+.canva_size_full_V {
+    width: 30rem;
+    height: 11rem;
+}
+.canva_size_short_V {
+    width: 14rem;
+    height: 13rem;
+}
+.canva_size_short_H {
+    width: 14rem;
+}
+
+.canvas_container {
+    display: flex;
+    gap: 2rem;
+}
+.canva:hover {
+    transform: scale(1.1);
+    box-shadow: var(--darkBlueMainColor) 8px 8px 1px;
+}
+.canva:active {
+    transform: scale(1.0);
+}
+
+.canva p {
+    margin: 0;
+    padding: 0 0 2rem 0;
+    font-size: 1.2rem;
+    color: var(--blueMainColor);
+}
+
+/*Palette colors area*/
+.palette_colors {
+    display: flex;
+}
+
+.container_picker {
+    width: 30vw;
+    background-color: var(--blueMainColor);
+    padding: 3rem 5rem 5rem;
+}
+
+.pTittle {
+    font-family: var(--PerfectDOS);
+    text-align: center;
+    color: var(--whiteColor);
+}
+
+.palette {
+    width: 13rem;
+    background-color: var(--whiteColor);
+    border: var(--whiteColor) 3px solid;
+    box-shadow: var(--darkBlueMainColor) 5px 5px 1px;
+}
+.palette p {
+    font-family: var(--PerfectDOS);
+    margin: 0.5rem 0;
+    padding: 0 1rem;
+    color: var(--blueMainColor);
+}
+.blue {
+    width: 11rem;
+    margin: auto;
+    padding: 1rem;
+    background-color: var(--blueMainColor);
+}
+.palette_container {
+    width: 20rem;
+    display: flex;
+    margin: 0 auto;
+}
+.colors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 2rem 0 0;
+}
+.pick {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0 1rem 0;
+    background-color: #848489;
+    border: var(--whiteColor) 3px solid;
+    cursor: pointer;
+    box-shadow: var(--darkBlueMainColor) 5px 5px 1px;
+    transition: all 0.1s ease-in-out;
+}
+
+.pickRed {
+    background-color: var(--redMainColor);
+}
+.pickYellow {
+    background-color: var(--yellowMainColor);
+}
+.pickGreen {
+    background-color: var(--greenMainColor);
+}
+.pickBlue {
+    background-color: var(--blueMainColor);
+}
+.pick:hover {
+    transform: scale(1.1);
+    box-shadow: var(--darkBlueMainColor) 8px 8px 1px;
+}
+.pick:active {
+    transform: scale(1);
+}
+
+.pick_select {
+    border: var(--whiteColor) 5px dashed;
+}
+
+
+.logo_colors_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5rem;
+}
+.ver_full_h {
+    width: 30rem;
+    fill: var(--blueMainColor);
+    margin: 1rem;
+}
+
+.ver_short_v {
+    width: 10rem;
+    fill: var(--blueMainColor);
+    margin: 1rem;
+}
+.ver_short_h {
+    width: 15rem;
+    fill: var(--blueMainColor);
+    margin: 1rem;
+}
+
+.only_d{
+    min-width: 3rem;
+    fill: var(--blueMainColor);
+    margin: 1rem;
+}
