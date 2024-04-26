@@ -2,6 +2,23 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+body {
+    background-image: url(../img/backgroundPattern.png);
+    background-repeat: repeat;
+    animation: bMove 80s infinite;
+}
+
+@keyframes bMove {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
 
 .navMenu {
     display: flex;
@@ -10,6 +27,7 @@ html {
     padding: 3vh 0 0 0;
     background-color: var(--grayMainColor);
     box-shadow: #848489 0 3px 1px;
+    opacity: 0;
 }
 
 .logo {
@@ -103,6 +121,7 @@ html {
     margin: 5rem;
     border: var(--darkBlueMainColor) 3px solid;
     box-shadow: var(--blueShadowColor) 5px 5px 1px;
+    background-color: var(--whiteColor);
     user-select: none;
 }
 
@@ -148,18 +167,21 @@ html {
 
 .pic1{
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     z-index: 1;
 }
+.pic1 img{
+    width: 20vw;
+}
 .pic2 {
     position: absolute;
-    top: 25%;
+    top: 45%;
     left: 35%;
     z-index: 0;
 }
     .pic2 img {
-        width: 25rem;
+        width: 20vw;
     }
 
 .pic3 {
@@ -169,24 +191,26 @@ html {
     z-index: 0;
 }
     .pic3 img {
-        width: 22rem;
+        width: 22vw;
     }
 
 .pic4 {
     position: absolute;
     top: 20%;
-    left: 75%;
+    left: 65%;
     z-index: 0;
 }
     .pic4 img {
-        width: 22rem;
+        width: 22vw;
     }
 .pic5 {
     position: absolute;
     top: 19%;
     left: 75%;
     z-index: 0;
-    width: 13%;
+}
+.pic5 img{
+    width: 13vw;
 }
 
 .construction {
@@ -338,10 +362,11 @@ html {
 
 
 .logo_colors_container {
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 5rem;
+    padding: 5rem 0;
 }
 .ver_full_h {
     width: 30rem;
@@ -364,4 +389,14 @@ html {
     min-width: 3rem;
     fill: var(--blueMainColor);
     margin: 1rem;
+}
+
+/*index*/
+.expD_container {
+    width: 50vw;
+    margin: 25vh auto;
+}
+
+.opacity {
+    opacity: 1;
 }
