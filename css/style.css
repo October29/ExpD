@@ -404,7 +404,7 @@ body {
     opacity: 1;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 800px) {
     .navMenu {
         width: 100%;
     }
