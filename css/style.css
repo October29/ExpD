@@ -34,6 +34,9 @@ body {
     width: 2rem;
     margin-top: -0.8rem;
 }
+.hMenu {
+    display: none;
+}
 
 .navItem {
     width: 190px;
@@ -399,4 +402,68 @@ body {
 
 .opacity {
     opacity: 1;
+}
+
+@media screen and (max-width: 430px) {
+    .navMenu {
+        width: 100%;
+    }
+    .hMenu {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        margin: 0 0 -20% 80%;
+    }
+    .line {
+        width: 2rem;
+        height: 0.3rem;
+        background-color: coral;
+        transition: all 0.4 ease-in-out;
+    }
+    .one {
+        background-color: var(--blueMainColor);
+    }
+    .two {
+        background-color: var(--blueMainColor);
+    }
+    .three {
+        background-color: var(--blueMainColor);
+    }
+    .navMenu_ItemContainer:hover .one {
+        background-color: var(--redMainColor);
+    }
+    .navMenu_ItemContainer:hover .two {
+        background-color: var(--yellowMainColor);
+    }
+    .navMenu_ItemContainer:hover .three {
+        background-color: var(--greenMainColor);
+    }
+    .navMenu_ItemContainer {
+        flex-direction: column;
+        justify-content: safe;
+        width: 193.2px;
+        margin: -8px 0 0 0;
+        padding: 0;
+        transition: height 0.3s ease-in-out;
+    }
+    .navMenu_ItemContainer:hover{
+        height: 210px;
+    }
+    .navMenu_ItemContainer:hover .navItem {
+        display: block;
+        opacity: 1;
+        animation: spawn 0.2s ease-in-out;
+    }
+    .navItem {
+        display: none;
+        opacity: 0;
+    }
+    @keyframes spawn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 }
