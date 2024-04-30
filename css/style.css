@@ -249,6 +249,8 @@ body {
 .video_ExpD {
     padding: 0;
     margin: -4rem 0 0 0;
+    width:400px;
+    height: 200px;
 }
 
 .canva_size_full_V {
@@ -458,6 +460,132 @@ body {
         display: none;
         opacity: 0;
     }
+
+    .concept {
+        margin: 0;
+    }
+    .conceptText {
+        width: 80vw;
+        margin: 3rem auto 0;
+        padding: 0;
+    }
+    .pic1, .pic2, .pic3, .pic4, .pic5 {
+        position: static;
+    }
+    .pic1 {
+        display: inline-block;
+        width: 40vw;
+        height: 40vw;
+        margin: 1rem;
+    }
+    .pic1 img {
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+    .pic2 {
+        display: inline-block;
+        width: 40vw;
+        height: 40vw;
+        margin: 1rem;
+    }
+    .pic2 img {
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+    .pic3 {
+        display: inline-block;
+        width: 40vw;
+        height: 40vw;
+        margin: 1rem;
+    }
+    .pic3 img {
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+    .pic4 {
+        display: inline-block;
+        width: 40vw;
+        height: 40vw;
+        margin: 1rem;
+    }
+    .pic4 img {
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+    .pic5 {
+        display: inline-block;
+        width: 40vw;
+        height: 72vw;
+        margin: 1rem;
+    }
+    .pic5 img {
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    .construction {
+        padding: 2rem 0 0 0 ;
+        margin: 0;
+    }
+    .cTittle {
+        margin: 0 0 1rem 2rem;
+    }
+    .canva {
+        margin: 0 auto;
+        width: 70vw;
+    }
+    .canva img, .canva video {
+        width: 100%;
+    }
+    .canva_video {
+        margin: 0 auto 2rem auto;
+    }
+
+    .palette_colors {
+        flex-direction: column;
+    }
+    .container_picker {
+        width: 100vw;
+        padding:   2rem 0;
+    }
+    .palette_container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .colors {
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .logo_colors_container {
+        width: 95vw;
+        padding: 2vw;
+        margin: 0;
+    }
+    .ver_full_h {
+        width: auto;
+        margin: 2rem auto;
+        padding: 2vw;
+    }
+    .ver_full_h svg{
+        width: 80vw;
+        margin: auto;
+    }
+    .ver_short_v, .ver_short_h {
+        width: auto;
+        margin: 0;
+        padding: 2vw;
+    }
+    .ver_short_v svg{
+        width: 30vw;
+    }
+    .ver_short_h svg{
+        width: 50vw;
+    }
+
+
     @keyframes spawn {
         0% {
             opacity: 0;

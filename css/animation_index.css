@@ -145,7 +145,7 @@
 
 @media screen and (max-width: 430px) {
     .expD_container {
-        transform: scale(1.5) translate(0, 4rem);
+        transform: scale(1.5) translate(0, 5rem);
     }
     .expD_container:active {
         transform: scale(0.99) translate(0, 4.5rem);
